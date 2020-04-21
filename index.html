@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(N) {
+        if (N<2){
+            return false;
+        }
+        for (let i=2;i<=Math.sqrt(N);i++){
+            if (N%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    if(!isPrime(10)){
+        alert("khong phai so nguyen to")
+    }else {
+        alert("la so nguyen to")
+    }
+</script>
+</body>
+</html>
